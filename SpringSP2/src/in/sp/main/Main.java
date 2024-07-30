@@ -12,8 +12,11 @@ public class Main {
 //		Student std1 = (Student) cxt.getBean("stdId1");
 //		std1.display();
 		
-		Student std1 = (Student) cxt.getBean("stdObj");
+		Student std1 = (Student) cxt.getBean("stdObj1");
 		std1.display();
+
+		Student std2 = (Student) cxt.getBean("stdObj2");
+		std2.display();
 	} 
 
 }
