@@ -19,7 +19,7 @@ public class SpringConfigFile {
 //		return std1;
 //	}
 	
-	@Bean("stdObj")
+	@Bean("stdObj1")
 	public Student createStdBeanObj() {
 		
 		Student std1 = new Student();
@@ -28,6 +28,17 @@ public class SpringConfigFile {
 		std1.setEmail("rahulkumarverma9198@gmail.com");
 		
 		return std1;
+	}
+
+	@Bean("stdObj2")
+	public Student createStdBeanObj() {
+		
+		Student std2 = new Student();
+		std1.setName("Suraj");
+		std1.setRollno(28);
+		std1.setEmail("surajsinghbrh6@gmail.com");
+		
+		return std2;
 	}
 	
 
