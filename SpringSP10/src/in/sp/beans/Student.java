@@ -6,7 +6,7 @@ public class Student {
 	private int rollno;
 	private String name;
 	@Autowired
-	@Qualifier("createAddObj1");
+	@Qualifier("createAddObj1"); //qualifier annotations are used when there are multiple beans but you have to use specific one.
 	private Address address;
 	@Autowired
 	private Subject subject;
