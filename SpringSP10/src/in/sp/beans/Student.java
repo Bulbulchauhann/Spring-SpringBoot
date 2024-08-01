@@ -6,7 +6,7 @@ public class Student {
 	private int rollno;
 	private String name;
 	@Autowired
-	@Qualifier("");
+	@Qualifier("createAddObj1");
 	private Address address;
 	@Autowired
 	private Subject subject;
