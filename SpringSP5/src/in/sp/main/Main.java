@@ -11,7 +11,10 @@ public class Main {
 		ApplicationContext cxt = new ClassPathXmlApplicationContext(config_file_loc);
 		
 		Student std1 =(Student) cxt.getBean("stdId1");
-	    std1.display();
+	        std1.display();
+
+		Student std2 =(Student) cxt.getBean("stdId2");
+	        std2.display();
 	}
 
 }
