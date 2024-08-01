@@ -14,7 +14,7 @@ import in.sp.beans.Subject;
 public class SpringConfigFile {
 
 	@Bean
-	public Address createAddObj() {
+	public Address createAddObj1() {
 		Address add1 = new Address();
 
 		add1.setHouseno(100);
@@ -22,6 +22,18 @@ public class SpringConfigFile {
 		add1.setPincode(302039);
 
 		return add1;
+	}
+
+	
+	@Bean
+	public Address createAddObj2() {
+		Address add2 = new Address();
+
+		add2.setHouseno(1000);
+		add2.setCity("Atlanta");
+		add2.setPincode(143517);
+
+		return add2;
 	}
 
 	@Bean
