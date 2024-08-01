@@ -27,7 +27,15 @@ public class Student {
 		this.name = name;
 	}
 
-//	only while manual DI----------------------
+//	only while using manual DI----------------------
+
+	//	public Address getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(Address address) {
+//		this.address = address;
+//	}
 
 //	public Subject getSubject() {
 //		return subject;
