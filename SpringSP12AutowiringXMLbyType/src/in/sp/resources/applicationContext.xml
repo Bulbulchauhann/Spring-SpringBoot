@@ -5,13 +5,13 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean class="in.sp.beans.Address" id="addId1" autowire-candidate="false">
+    <bean class="in.sp.beans.Address" id="addId1" >
     <property name = "houseno" value = "01" />
     <property name = "city" value = "Lucknow" />
     <property name = "pincode" value = "678909" />    
     </bean>
     
-    <bean class="in.sp.beans.Address" id="addId2" autowire-candidate = "true">
+    <bean class="in.sp.beans.Address" id="addId2" autowire-candidate="false">
     <property name = "houseno" value = "02" />
     <property name = "city" value = "Jaipur" />
     <property name = "pincode" value = "302039" />    
@@ -20,8 +20,7 @@
     <bean class="in.sp.beans.Student" id="stdId1" autowire="byType" > <!-- by byName, property name should be same as id of bean -->
     <property name = "name" value = "Suraj" />
     <property name = "rollno" value = "25" />
-    <!-- <property name = "address" ref = "addId1" /> -->
-     <!--ref attribute is to inject dependency-->
+    <!-- <property name = "address" ref = "addId1" /> -->  <!--ref attribute is to inject dependency-->    
     </bean>
     
     </beans>
