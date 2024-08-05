@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="in.sp.beans.Address" id="address">
+    <property name = "houseno" value = "01" />
+    <property name = "city" value = "Lucknow" />
+    <property name = "pincode" value = "678909" />    
+    </bean>
+    
+    <bean class="in.sp.beans.Address" id="addId2">
+    <property name = "houseno" value = "02" />
+    <property name = "city" value = "Jaipur" />
+    <property name = "pincode" value = "302039" />    
+    </bean>
+    
+    <bean class="in.sp.beans.Student" id="stdId1" autowire="byName" > <!-- by byName, property name should be same as id of bean -->
+    <property name = "name" value = "Suraj" />
+    <property name = "rollno" value = "25" />
+    <!-- <property name = "address" ref = "addId1" /> -->
+     <!--ref attribute is to inject dependency-->
+    </bean>
+    
+    </beans>
+    
+    
+
