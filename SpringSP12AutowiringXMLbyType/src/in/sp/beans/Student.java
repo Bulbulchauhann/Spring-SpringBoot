@@ -26,7 +26,7 @@ public class Student {
 	}
 
 	public void setAddress(Address address) {
-		System.out.println("address setter method called");
+		// System.out.println("address setter method called"); //was only to check if byType uses setter method internally
 		this.address = address;
 	}
 	
