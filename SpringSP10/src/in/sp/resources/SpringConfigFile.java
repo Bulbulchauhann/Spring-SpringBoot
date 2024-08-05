@@ -37,6 +37,17 @@ public class SpringConfigFile {
 	}
 
 	@Bean
+	public Address createAddObj3() {
+		Address add3 = new Address();
+
+		add3.setHouseno(2000);
+		add3.setCity("Paris");
+		add3.setPincode(878656);
+
+		return add2;
+	}
+
+	@Bean
 	public Subject createSubObj() {
 
 		Subject sub1 = new Subject();
