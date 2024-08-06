@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="in.sp.beans.Address" id="addId1" autowire-candidate="false">
+    <constructor-arg value = "101" />  
+    <constructor-arg value = "Lucknow" />  
+    <constructor-arg value = "897969" />  
+    </bean>
+    
+    <bean class="in.sp.beans.Address" id="addId2" autowire-candidate = "true">
+    <constructor-arg value = "102" />  
+    <constructor-arg value = "Jaipur" />  
+    <constructor-arg value = "302039" />     
+    </bean>
+    
+    <bean class="in.sp.beans.Student" id="stdId1" autowire="constructor">
+    <constructor-arg value = "Suraj" index="0"/> 
+    <constructor-arg value = "25" index = "1"/>
+   <!--  <constructor-arg ref = "addId1"/> -->
+    </bean>   
+    
+    </beans>
+    
+    
+
