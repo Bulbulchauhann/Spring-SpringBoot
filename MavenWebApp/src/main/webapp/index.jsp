@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>First Maven Web Aop</title>
 </head>
 <body>
 <h2>Welcome to Maven Web App</h2>
