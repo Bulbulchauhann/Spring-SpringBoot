@@ -1,19 +1,19 @@
 => Steps to create a spring First web-mvc program :-
-      1. create maven webapp project
-      2. configure runtime environment in project facet
-      3. provide "spring-mvc" dependency in pom.xml
-      4. configure "DispatcherServlet" class in web.xml file or in java class
-      5. create "spring Configuration File" by servlet name (myds-servlet.xml)
-      6. Configure the handler mapping class in spring configuration file
+      1. Create Maven Webapp Project.
+      2. Configure Runtime Environment in Project Facet.
+      3. Provide "spring-mvc" Dependency in pom.xml File. (XML Schema-based configuration)
+      4. Configure "DispatcherServlet" class in web.xml file or in java class.
+      5. Create "Spring Configuration File" by servlet name. (myds-servlet.xml)
+      6. Configure the Handler Mapping class in spring configuration file :
                  = HandlerMapping <interface>
                  = BeanNsmeUrlHandlerMapping
                  = RequestMappingHandlerMapping (default)
                    etc
       7. Create controller (create java class and annotate it with @Controller ) 
-         in src/main/java folder
-      8. Create handler methods in controller and return the modelandview object
-      9. Configure ViewResolver in spring configuration file
+         in "src/main/java" folder.
+      8. Create handler methods in controller and return the ModelAndView object.
+      9. Configure ViewResolver in spring configuration file :
                  = ViewResolver <interface>
                  = InternalResourceViewResolver (default)
-      10. Create View page to be returned (/WEB-INF/views/---.jsp)
-      11. Scan the package in w hich controllers are created in spring configuration file
+      10. Create View page to be returned. (/WEB-INF/views/---.jsp)
+      11. Scan the package in which controllers are created in spring configuration file.
